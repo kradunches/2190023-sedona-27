@@ -1,65 +1,11 @@
-@font-face {
-  font-family: "PT Sans";
-  font-style: bold;
-  font-weight: 700;
-  src: url("../fonts/ptsansbold.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: bold;
-  font-weight: 700;
-  src: url("../fonts/ptsansbold.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/ptsans.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/ptsans.woff") format("woff");
-  font-display: swap;
-}
-
-html {
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  min-height: 100%;
-  min-width: 320px;
-  font-family: "PT Sans", sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  color: #000000;
-  background-color: #FFFFFF;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-@import "welcome-painting.less";
-@import "index/blocks/characteristics.less";
-@import "index/blocks/hotel-block.less";
-@import "main-footer.less";
-@import "main-nav.less";
-@import "catalog/blocks/photos-videos.less";
-@import "form/blocks/form.less";
+@import "global.less";
+@import "fonts.less";
+@import "blocks/welcome-painting.less";
+@import "blocks/characteristics.less";
+@import "blocks/hotel-block.less";
+@import "blocks/main-footer.less";
+@import "blocks/site-list.less";
+@import "blocks/photos-videos.less";
+@import "blocks/form.less";
+@import "blocks/galery.less";
+@import "blocks/social.less";
