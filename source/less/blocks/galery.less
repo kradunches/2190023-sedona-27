@@ -1,4 +1,107 @@
+.galery {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  padding: 0;
+  margin: 0 auto;
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 648px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.galery__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  width: 320px;
+  min-height: 424px;
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 324px;
+    height: 347px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    height: 367px;
+  }
+}
+
+.galery__item--unnativespace {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 648px;
+    height: 550px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    height: 600px;
+  }
+}
+
+.galery__image-unnativespace {
+  width: 280px;
+  height: 280px;
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 648px;
+    height: 400px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    height: 400px;
+  }
+}
+
+.galery__image-flora {
+  width: 280px;
+  height: 280px;
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 324px;
+    height: 267px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    height: 267px;
+  }
+}
+
+.galery__image-waytothenorth {
+  width: 280px;
+  height: 280px;
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 324px;
+    height: 267px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    height: 267px;
+  }
+}
+
+.galery__image-devilbridge {
+  width: 280px;
+  height: 280px;
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 324px;
+    height: 267px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    height: 267px;
+  }
+}
+
+.galery__image-link {
+  display: block;
+}
+
 .galery__title {
+  display: block;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -7,6 +110,7 @@
 }
 
 .galery__text {
+  display: block;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -15,6 +119,7 @@
 }
 
 .galery__likes-count {
+  display: block;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -23,18 +128,41 @@
 }
 
 .galery__like-button {
-  background-image: url("../img/catalog/like-icon.svg");
+  background-image: url(../img/catalog/like-icon.svg);
+}
+
+.galery__item--video {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    margin: 0 auto;
+    width: 648px;
+    height: 745px;
+  }
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    width: 800px;
+    height: 747px;
+  }
 }
 
 .galery__video-title {
+  width: 266px;
+  text-align: center;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    font-size: 30px;
+  }
+  @media (min-width: @desktop-width) {
+    font-size: 30px;
+  }
 }
 
 .galery__video-text {
+  width: 266px;
+  text-align: center;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -42,8 +170,15 @@
   color: #333333;
 }
 
-.galery__item {
-  list-style-type: none;
-  width: 320px;
-  min-height: 424px;
+.galery__video-link {
+  width: 280px;
+  height: 177px;
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 648px;
+    height: 500px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 800px;
+    height: 500px;
+  }
 }

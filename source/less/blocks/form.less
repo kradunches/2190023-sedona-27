@@ -1,17 +1,139 @@
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__greetings-wrapper {
+  width: 280px;
+  height: 134px;
+  margin: 0 20px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 435px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 435px;
+  }
+}
+
+.form__sedona-logo {
+  position: absolute;
+  top: -50px;
+  z-index: 1;
+}
+
+.form__sedona-mountains {
+  width: 320px;
+  height: 389px;
+  background-image: url(../img/form/form-back-mobile.png);
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 768px;
+    height: 518px;
+    background-image: url(../img/form/form-back-tablet.png);
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    height: 518px;
+    background-image: url(../img/form/form-back-desktop.png);
+    background-repeat: no-repeat;
+  }
+}
+
 .form__greetings-title {
+  text-align: center;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    font-size: 30px;
+  }
+  @media (min-width: @desktop-width) {
+    font-size: 30px;
+  }
 }
 
 .form__greetings-text {
+  text-align: center;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+}
+
+.form__list {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    flex-direction: row;
+    width: 648px;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    width: 960px;
+    flex-wrap: wrap;
+  }
+}
+
+.form__item {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 324px;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 480px;
+    align-items: center;
+  }
+}
+
+.form__item--radio-checkbox {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 648px;
+  }
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 960px;
+  }
+}
+
+.form__item--radio-checkbox .form__title {
+  @media (min-width: @desktop-width) {
+    text-align: center;
+    width: 960px;
+  }
+}
+
+.form__item--emotions {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 648px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+  }
 }
 
 .form__title {
@@ -20,6 +142,12 @@
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    font-size: 21px;
+  }
+  @media (min-width: @desktop-width) {
+    font-size: 21px;
+  }
 }
 
 .form__label {
@@ -31,8 +159,6 @@
 }
 
 .form__input {
-  margin-left: 20px;
-  margin-right: 20px;
   width: 280px;
   height: 58px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -41,6 +167,29 @@
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+  padding: 0;
+  border-width: 0;
+  background-color: #F2F2F2;
+}
+
+.form__impressions-radio {
+  margin: 0;
+  padding: 0;
+  width: 46px;
+  height: 46px;
+}
+
+.form__radio-checkbox-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.form__showplaces-checkbox {
+  margin: 0;
+  padding: 0;
+  width: 46px;
+  height: 46px;
 }
 
 .form__radio-checkbox-text {
@@ -50,16 +199,29 @@
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+  width: 188px;
 }
 
 .form__emotions-comment {
   width: 279px;
   height: 150px;
+  padding: 0;
+  border-width: 0;
+  background-color: #F2F2F2;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 648px;
+    height: 168px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 768px;
+    height: 160px;
+  }
 }
 
 .form__submit-button {
@@ -72,13 +234,28 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 324px;
+    height: 58px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 384px;
+    height: 58px;
+  }
 }
 
 .form__required-text {
+  text-align: right;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 21px;
   text-transform: uppercase;
   color: rgba(51, 51, 51, 0.6);
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    font-size: 14px;
+  }
+  @media (min-width: @desktop-width) {
+    font-size: 30px;
+  }
 }

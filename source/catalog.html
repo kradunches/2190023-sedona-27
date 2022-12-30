@@ -3,28 +3,26 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial scale=1">
   <title>Каталог</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="main-header">
-    <a class="main-header__logo">
-      <img src="#" width="185" height="96" alt="Логотип Седона">
-    </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <!--<button class="site-list__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>-->
       <ul class="main-nav__menu site-list">
         <li class="site-list__item site-list__item--active">
-          <a class="site-list__link" href="index.html">ГЛАВНАЯ
+          <a class="site-list__link" href="../index.html">ГЛАВНАЯ
           </a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="catalog.html">ФОТО И ВИДЕО
+          <a class="site-list__link" href="../catalog.html">ФОТО И ВИДЕО
           </a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="form.html">ФОРМА ОТЗЫВА
+          <a class="site-list__link" href="../form.html">ФОРМА ОТЗЫВА
           </a>
         </li>
         <li class="site-list__item">
@@ -36,11 +34,8 @@
   </header>
   <main class="main-container">
     <section class="welcome-painting">
-      <h1 class="visually-hidden">СЕДОНА — небольшой городок в АРИЗОНЕ.</h1>
-      <div class="welcome-painting__wrapper">
-        <img src="img/logo.png" width="185" height="96" alt="Логотип Седона">
-        <img src="img/mountains-header.png" width="901" height="389" alt="Визитная карточка СЕДОНА">
-      </div>
+      <img class="welcome-painting__sedona-logo" src="img/logo.png" width="185" height="96" alt="Логотип Седона">
+      <div class="welcome-painting__sedona-mountains"></div>
     </section>
     <section class="photos-videos">
       <div class="photos-videos__title-wrapper">
@@ -49,9 +44,9 @@
           ЗАБЫТЬ О ПОЛИТИКЕ И ЭКОНОМИКЕ.</p>
       </div>
       <ul class="photos-videos__galery galery">
-        <li class="galery__item">
+        <li class="galery__item galery__item--unnativespace">
           <a class="galery__image-link" href="#">
-            <img src="img/catalog/unnativespace.jpg" alt="Неродные просторы" width="280" height="280">
+            <img class="galery__image-unnativespace" src="img/catalog/unnativespace.jpg" alt="Неродные просторы">
           </a>
           <h3 class="galery__title">НЕРОДНЫЕ ПРОСТОРЫ</h3>
           <p class="galery__text">Автор фото: Борис</p>
@@ -60,7 +55,7 @@
         </li>
         <li class="galery__item">
           <a class="galery__image-link" href="#">
-            <img src="img/catalog/flora.png" alt="Местная растительность" width="280" height="280">
+            <img class="galery__image-flora" src="img/catalog/flora.jpg" alt="Местная растительность">
           </a>
           <h3 class="galery__title">МЕСТНАЯ РАСТИТЕЛЬНОСТЬ</h3>
           <p class="galery__text">Автор фото: Сергей</p>
@@ -69,7 +64,7 @@
         </li>
         <li class="galery__item">
           <a class="galery__image-link" href="#">
-            <img src="img/catalog/waytothenorth.jpg" alt="Дорога на сервер" width="280" height="280">
+            <img class="galery__image-waytothenorth" src="img/catalog/waytothenorth.jpg" alt="Дорога на сервер">
           </a>
           <h3 class="galery__title">ДОРОГА НА СЕВЕР</h3>
           <p class="galery__text">Автор фото: Петр</p>
@@ -78,20 +73,18 @@
         </li>
         <li class="galery__item">
           <a class="galery__image-link" href="#">
-            <img src="img/catalog/devilbridge.jpg" alt="Мост дьявола" width="280" height="280">
+            <img class="galery__image-devilbridge" src="img/catalog/devilbridge.jpg" alt="Мост дьявола">
           </a>
           <h3 class="galery__title">МОСТ ДЬЯВОЛА</h3>
           <p class="galery__text">Автор фото: Антон</p>
           <button class="galery__like-button"></button>
           <p class="galery__likes-count">254</p>
         </li>
-        <li class="galery__item">
+        <li class="galery__item galery__item--video">
           <p class="galery__video-title">ВСЕ ЕЩЕ СОМНЕВАЕТЕСЬ?</p>
           <p class="galery__video-text">СМОТРИТЕ ВИДЕОПРЕЗЕНТАЦИЮ И СКОРЕЕ ЗА БИЛЕТАМИ, ПОКА ОНИ НЕ ПОДОРОЖАЛИ
             В ОЧЕРЕДНОЙ РАЗ!</p>
-          <a class="galery__video-link">
-            <img src="img/catalog/video-mobile.jpg" alt="Видеоотчёт из села Седона" width="280" height="177">
-          </a>
+          <img class="galery__video-link" src="../img/catalog/video.jpg" alt="Видеотчёт из Седоны">
         </li>
       </ul>
     </section>
@@ -105,25 +98,26 @@
       <div class="main-footer__social social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy"><span
-                class="visually-hidden">VK</span></a>
+          <li class="social__item social__item--vk">
+            <a class="social__link" href="https://vk.com/htmlacademy"><span class="visually-hidden">VK</span></a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--tg" href="https://t.me/htmlacademy"><span
-                class="visually-hidden">Telegram</span></a>
+          <li class="social__item social__item--tg">
+            <a class="social__link" href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram</span></a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--yt" href="https://www.youtube.com/user/htmlacademyru"><span
+          <li class="social__item social__item--yt">
+            <a class="social__link" href="https://www.youtube.com/user/htmlacademyru"><span
                 class="visually-hidden">YouTube</span></a>
           </li>
         </ul>
-        <div class="main-footer__logo-wrapper">
-          <a class="main-footer__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
-            <p class="main-footer__logo-text">РАЗРАБОТАНО</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none"><path fill="#000" d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"/></svg>
-          </a>
-        </div>
+      </div>
+      <div class="main-footer__logo-wrapper">
+        <a class="main-footer__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <p class="main-footer__logo-text">РАЗРАБОТАНО</p>
+          <svg class="main-footer__logo-academy" xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none">
+            <path fill="#000"
+              d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
+          </svg>
+        </a>
       </div>
     </div>
   </footer>

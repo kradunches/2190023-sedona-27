@@ -1,20 +1,82 @@
+.welcome-painting {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-painting__sedona-logo {
+  position: absolute;
+  top: -50px;
+  z-index: 1;
+}
+
 .welcome-painting__text {
   width: 320px;
   min-height: 205px;
 }
 
+.welcome-painting__sedona-mountains {
+  width: 320px;
+  height: 389px;
+  background-image: url(../img/back-mobile.png);
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 768px;
+    height: 518px;
+    background-image: url(../img/back-tablet.png);
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    height: 518px;
+    background-image: url(../img/back-desktop.png);
+    background-repeat: no-repeat;
+  }
+}
+
 .welcome-painting__description {
+  display: block;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+  text-align: center;
+  margin: 32px 18px 0px 18px;
+  width: 284px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    font-size: 21px;
+    width: 520px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 21px;
+    width: 484px;
+  }
 }
 
 .welcome-painting__justification {
+  display: block;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+  text-align: center;
+  margin-right: 18px;
+  margin-left: 18px;
+  margin: 35px 18px 16px 18px;
+  width: 284px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 520px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 484px;
+  }
 }

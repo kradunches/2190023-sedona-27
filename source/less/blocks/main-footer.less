@@ -1,6 +1,35 @@
-.main-footer__wrapper {
-  width: 320px;
+.main-footer {
+  min-width: 320px;
   min-height: 233px;
+  width: 100%;
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: @desktop-width){
+    min-width: 1200px;
+  }
+}
+
+.main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 28px;
+  margin-left: 82px;
+  margin-right: 82px;
+  margin-bottom: 0;
+  min-width: 168px;
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    flex-direction: row;
+    width: 768px;
+    margin: 36px auto;
+  }
+
+  @media (min-width: @desktop-width){
+    flex-direction: row;
+    width: 1200px;
+    margin: 36px auto;
+  }
 }
 
 .main-footer__sedona-link {
@@ -13,16 +42,27 @@
   font-size: 21px;
   line-height: 26px;
   color: #000000;
+  text-align: center;
 }
 
 .main-footer__logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
 }
 
+.main-footer__logo-academy {
+  margin-left: 12px;
+  display: block;
+}
+
 .main-footer__logo-text {
+  display: block;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #000000;
+  text-align: center;
 }
