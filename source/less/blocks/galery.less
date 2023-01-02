@@ -4,15 +4,13 @@
   width: 320px;
   padding: 0;
   margin: 0 auto;
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     width: 648px;
     flex-direction: row;
     flex-wrap: wrap;
   }
   @media (min-width: @desktop-width) {
-    width: 1200px;
-    flex-direction: row;
-    flex-wrap: wrap;
+    width: @desktop-width;
   }
 }
 
@@ -23,7 +21,7 @@
   list-style-type: none;
   width: 320px;
   min-height: 424px;
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     width: 324px;
     height: 347px;
   }
@@ -34,12 +32,12 @@
 }
 
 .galery__item--unnativespace {
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     width: 648px;
     height: 550px;
   }
   @media (min-width: @desktop-width) {
-    width: 1200px;
+    width: @desktop-width;
     height: 600px;
   }
 }
@@ -47,52 +45,48 @@
 .galery__image-unnativespace {
   width: 280px;
   height: 280px;
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     width: 648px;
     height: 400px;
   }
   @media (min-width: @desktop-width) {
-    width: 1200px;
-    height: 400px;
+    width: @desktop-width;
   }
 }
 
 .galery__image-flora {
   width: 280px;
   height: 280px;
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     width: 324px;
     height: 267px;
   }
   @media (min-width: @desktop-width) {
     width: 400px;
-    height: 267px;
   }
 }
 
 .galery__image-waytothenorth {
   width: 280px;
   height: 280px;
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     width: 324px;
     height: 267px;
   }
   @media (min-width: @desktop-width) {
     width: 400px;
-    height: 267px;
   }
 }
 
 .galery__image-devilbridge {
   width: 280px;
   height: 280px;
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     width: 324px;
     height: 267px;
   }
   @media (min-width: @desktop-width) {
     width: 400px;
-    height: 267px;
   }
 }
 
@@ -128,17 +122,16 @@
 }
 
 .galery__like-button {
-  background-image: url(../img/catalog/like-icon.svg);
+  background-image: url(/img/catalog/like-icon.svg);
 }
 
 .galery__item--video {
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     margin: 0 auto;
     width: 648px;
     height: 745px;
   }
   @media (min-width: @desktop-width) {
-    margin: 0 auto;
     width: 800px;
     height: 747px;
   }
@@ -152,10 +145,7 @@
   font-size: 18px;
   line-height: 26px;
   color: #000000;
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    font-size: 30px;
-  }
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     font-size: 30px;
   }
 }
@@ -173,12 +163,11 @@
 .galery__video-link {
   width: 280px;
   height: 177px;
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     width: 648px;
     height: 500px;
   }
   @media (min-width: @desktop-width) {
     width: 800px;
-    height: 500px;
   }
 }

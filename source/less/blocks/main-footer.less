@@ -1,34 +1,29 @@
 .main-footer {
   min-width: 320px;
-  min-height: 233px;
   width: 100%;
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    min-width: 768px;
+  @media (min-width: @tablet-width) {
+    min-width: @tablet-width;
   }
 
   @media (min-width: @desktop-width){
-    min-width: 1200px;
+    min-width: @desktop-width;
   }
 }
 
 .main-footer__wrapper {
   display: flex;
   flex-direction: column;
-  margin-top: 28px;
-  margin-left: 82px;
-  margin-right: 82px;
-  margin-bottom: 0;
+  margin: 28px 82px 0 82px;
   min-width: 168px;
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+
+  @media (min-width: @tablet-width) {
     flex-direction: row;
-    width: 768px;
+    width: @tablet-width;
     margin: 36px auto;
   }
 
   @media (min-width: @desktop-width){
-    flex-direction: row;
-    width: 1200px;
-    margin: 36px auto;
+    width: @desktop-width;
   }
 }
 
