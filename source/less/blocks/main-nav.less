@@ -1,8 +1,8 @@
 .main-nav {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-nav__sedona-logo {
@@ -10,4 +10,43 @@
   z-index: 2;
   margin: 0 auto;
   position: absolute;
+}
+
+@media (max-width: @tablet-width) {
+  .main-nav__toggle {
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    display: block;
+    width: 56px;
+    height: 56px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+
+    &:hover,
+    &:active {
+      background-color: #FFFFFF;
+    }
+  }
+
+  .main-nav--closed .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 17px;
+    width: 23px;
+    height: 4px;
+    background-color: #81B3D2;
+    box-shadow: 0 8px 0 0 #81B3D2, 0 16px 0 0 #81B3D2;
+  }
+
+  .main-nav--closed .main-nav__toggle:active::before {
+    background-color: fade(#81B3D2, 30%);
+    box-shadow:
+      0 8px 0 0 fade(#81B3D2, 30%),
+      0 16px 0 0 fade(#81B3D2, 30%);
+  }
 }
