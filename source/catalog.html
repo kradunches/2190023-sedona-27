@@ -11,15 +11,15 @@
 <body>
   <div class="page__container">
     <header class="main-header">
-      <nav class="main-nav">
-        <!--<button class="site-list__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>-->
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__menu site-list">
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item">
             <a class="site-list__link" href="./index.html">ГЛАВНАЯ
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="./catalog.html">ФОТО И ВИДЕО
+            <a class="site-list__link site-list__link--active" href="./catalog.html">ФОТО И ВИДЕО
             </a>
           </li>
           <li class="site-list__item">
@@ -31,7 +31,9 @@
             </a>
           </li>
         </ul>
-        <img class="main-nav__sedona-logo" src="./img/logo.png" width="185" height="96" alt="Логотип Седона">
+        <a class="main-nav__logo" href="./index.html">
+          <img class="main-nav__sedona-logo" src="./img/logo.png" width="185" height="96" alt="Логотип Седона">
+        </a>
       </nav>
     </header>
     <main class="main-container">
@@ -40,7 +42,8 @@
         <div class="welcome-painting__sedona-mountains welcome-painting__sedona-mountains--catalog">
           <img class="welcome-painting__sedona-text" src="./img/text-sedona.svg" width="230" height="40"
             alt="Добро пожаловать в Седону.">
-            <img class="welcome-painting__hero-block-triangle" src="./img/intro-triangle.svg" width="320" height="57"  alt="">
+          <!-- <img class="welcome-painting__hero-block-triangle" src="./img/intro-triangle.svg" width="320" height="57" -->
+          alt="">
         </div>
       </section>
       <section class="photos-videos">
@@ -54,37 +57,53 @@
             <a class="galery__image-link" href="#">
               <img class="galery__image-unnativespace" src="./img/catalog/unnativespace.jpg" alt="Неродные просторы">
             </a>
-            <h3 class="galery__title">НЕРОДНЫЕ ПРОСТОРЫ</h3>
-            <p class="galery__text">Автор фото: Борис</p>
-            <button class="galery__like-button"></button>
-            <p class="galery__likes-count">1350</p>
+            <div class="galery__item-wrapper">
+              <div class="galery__item-text-wrapper">
+                <h3 class="galery__title">НЕРОДНЫЕ ПРОСТОРЫ</h3>
+                <p class="galery__text">Автор фото: Борис</p>
+              </div>
+              <button class="galery__like-button"></button>
+              <p class="galery__likes-count">1350</p>
+            </div>
           </li>
           <li class="galery__item">
             <a class="galery__image-link" href="#">
               <img class="galery__image-flora" src="./img/catalog/flora.jpg" alt="Местная растительность">
             </a>
-            <h3 class="galery__title">МЕСТНАЯ РАСТИТЕЛЬНОСТЬ</h3>
-            <p class="galery__text">Автор фото: Сергей</p>
-            <button class="galery__like-button"></button>
-            <p class="galery__likes-count">143</p>
+            <div class="galery__item-wrapper">
+              <div class="galery__item-text-wrapper">
+                <h3 class="galery__title">МЕСТНАЯ РАСТИТЕЛЬНОСТЬ</h3>
+                <p class="galery__text">Автор фото: Сергей</p>
+              </div>
+              <button class="galery__like-button"></button>
+              <p class="galery__likes-count">143</p>
+            </div>
           </li>
           <li class="galery__item">
             <a class="galery__image-link" href="#">
               <img class="galery__image-waytothenorth" src="./img/catalog/waytothenorth.jpg" alt="Дорога на сервер">
             </a>
-            <h3 class="galery__title">ДОРОГА НА СЕВЕР</h3>
-            <p class="galery__text">Автор фото: Петр</p>
-            <button class="galery__like-button"></button>
-            <p class="galery__likes-count">96</p>
+            <div class="galery__item-wrapper">
+              <div class="galery__item-text-wrapper">
+                <h3 class="galery__title">ДОРОГА НА СЕВЕР</h3>
+                <p class="galery__text">Автор фото: Петр</p>
+              </div>
+              <button class="galery__like-button"></button>
+              <p class="galery__likes-count">96</p>
+            </div>
           </li>
           <li class="galery__item">
             <a class="galery__image-link" href="#">
               <img class="galery__image-devilbridge" src="./img/catalog/devilbridge.jpg" alt="Мост дьявола">
             </a>
-            <h3 class="galery__title">МОСТ ДЬЯВОЛА</h3>
-            <p class="galery__text">Автор фото: Антон</p>
-            <button class="galery__like-button"></button>
-            <p class="galery__likes-count">254</p>
+            <div class="galery__item-wrapper">
+              <div class="galery__item-text-wrapper">
+                <h3 class="galery__title">МОСТ ДЬЯВОЛА</h3>
+                <p class="galery__text">Автор фото: Антон</p>
+              </div>
+              <button class="galery__like-button"></button>
+              <p class="galery__likes-count">254</p>
+            </div>
           </li>
           <li class="galery__item galery__item--video">
             <p class="galery__video-title">ВСЕ ЕЩЕ СОМНЕВАЕТЕСЬ?</p>
@@ -129,6 +148,7 @@
       </div>
     </footer>
   </div>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
