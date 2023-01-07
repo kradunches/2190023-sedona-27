@@ -1,7 +1,9 @@
 .main-footer {
   min-width: 320px;
+  min-height: 233px;
   width: 100%;
   @media (min-width: @tablet-width) {
+    min-height: 120px;
     min-width: @tablet-width;
   }
 
@@ -13,7 +15,7 @@
 .main-footer__wrapper {
   display: flex;
   flex-direction: column;
-  margin: 28px 82px 0 82px;
+  margin: 28px 82px 0 76px;
   min-width: 168px;
 
   @media (min-width: @tablet-width) {
@@ -30,7 +32,7 @@
 .main-footer__sedona-link {
   text-decoration: none;
   @media (min-width: @tablet-width) {
-    margin-left: 76px;
+    margin-left: 61px;
   }
   @media (min-width: @desktop-width){
     margin-left: 136px;
@@ -44,12 +46,18 @@
   line-height: 26px;
   color: #000000;
   text-align: center;
+  margin-bottom: 31px;
+  @media (min-width: @tablet-width) {
+    margin-top: 14px;
+  }
 }
 
 .main-footer__logo-wrapper {
   margin: auto auto;
+  margin-top: 34px;
   @media (min-width: @tablet-width) {
-    margin-right: 76px;
+    margin: 0;
+    margin-right: 75px;
   }
   @media (min-width: @desktop-width){
     margin-right: 136px;

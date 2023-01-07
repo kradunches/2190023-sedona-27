@@ -3,6 +3,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 613px;
+
+  @media (min-width: @tablet-width) {
+    height: 723px;
+  }
 }
 
 .welcome-painting__text {
@@ -11,7 +16,7 @@
 }
 
 .welcome-painting__sedona-mountains {
-  position: relative;  
+  position: relative;
   box-sizing: border-box;
   width: 320px;
   height: 389px;
@@ -20,16 +25,16 @@
   background-position: center bottom;
   padding: 90px 19px 85px 19px;
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     width: @tablet-width;
     height: 518px;
-    padding: 78px 153px 90px 153px;    
+    padding: 78px 153px 90px 153px;
     // background-image: url(../img/back-tablet.png);
   }
 
   @media (min-width: @desktop-width) {
     width: @desktop-width;
-    padding: 78px 370px 90px 370px;        
+    padding: 78px 370px 90px 370px;
     // background-image: url(../img/back-desktop.png);
   }
 }
@@ -37,34 +42,34 @@
 .welcome-painting__sedona-mountains--catalog {
   box-sizing: border-box;
   height: 158px;
-  padding: 45px 45px;  
+  padding: 45px 45px;
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     height: 301px;
-    padding: 120px 154px;     
+    padding: 120px 154px;
   }
 
-  @media (min-width: @desktop-width){
-    padding: 120px 370px;     
-  }  
+  @media (min-width: @desktop-width) {
+    padding: 120px 370px;
+  }
 }
 
 .welcome-painting__hero-block-text {
-  @media (min-width:  @tablet-width) {  
-  width: 460px;
-  height: 350px;
+  @media (min-width: @tablet-width) {
+    width: 460px;
+    height: 350px;
   }
 }
 
 .welcome-painting__sedona-text {
-  @media (min-width:  @tablet-width) {  
-  width: 460px;
-  height: 80px;
+  @media (min-width: @tablet-width) {
+    width: 460px;
+    height: 80px;
   }
 }
 
 // .welcome-painting__sedona-mountains::after {
-.welcome-painting__hero-block-triangle  {
+.welcome-painting__hero-block-triangle {
   position: absolute;
   // content: "AAAAAA";
   left: 0;
@@ -76,10 +81,12 @@
   // background-position: center;
   // background-color: white;
   z-index: 9;
-  @media (min-width:  @tablet-width) {
+
+  @media (min-width: @tablet-width) {
     width: @tablet-width;
   }
-  @media (min-width:  @desktop-width) {
+
+  @media (min-width: @desktop-width) {
     width: @desktop-width;
   }
 }
@@ -93,14 +100,17 @@
   color: #000000;
   text-align: center;
   margin: 32px 18px 0px 18px;
-  width: 284px;
+  overflow-wrap: break-word;
+  width: 272px;
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     font-size: 21px;
     width: 520px;
+    margin-top: 48px;
   }
 
   @media (min-width: @desktop-width) {
+    margin-top: 61px;
     width: 484px;
   }
 }
@@ -115,10 +125,10 @@
   text-align: center;
   margin-right: 18px;
   margin-left: 18px;
-  margin: 35px 18px 16px 18px;
+  margin: 35px 18px 38px 18px;
   width: 284px;
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     width: 520px;
   }
 

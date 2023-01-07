@@ -11,7 +11,7 @@
     min-height: 318px;
   }
 
-  @media (min-width: @desktop-width){
+  @media (min-width: @desktop-width) {
     min-width: @desktop-width;
     min-height: 331px;
   }
@@ -26,8 +26,10 @@
   line-height: 26px;
   color: #000000;
   width: 262px;
+  margin-top: 47px;
 
   @media (min-width: @tablet-width) {
+    margin-top: 61px;
     font-size: 30px;
     width: 435px;
   }
@@ -41,6 +43,7 @@
   line-height: 21px;
   color: #333333;
   width: 262px;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 14px;
@@ -48,15 +51,26 @@
 }
 
 .hotel-block__button {
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  font-style: normal;
+  font-weight: 700;
+  // font-size: 21px;
+  font-size: 18px;
+  line-height: 26px;
   color: #FFFFFF;
   background-color: #81B3D2;
+  width: 282px;
+  height: 60px;
   padding: 16px 49px;
+  margin-top: 29px;
+  border: none;
 
   @media (min-width: @tablet-width) {
+    margin-top: 22px;
     width: 458px;
   }
 }
