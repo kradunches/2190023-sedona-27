@@ -4,15 +4,18 @@
   width: 320px;
   padding: 0;
   margin: 0 auto;
+  margin-top: 47px;
 
   @media (min-width: @tablet-width) {
     width: 648px;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 66px;
   }
 
   @media (min-width: @desktop-width) {
     width: @desktop-width;
+    margin-top: 68px;
   }
 }
 
@@ -26,7 +29,7 @@
 
   @media (min-width: @tablet-width) {
     width: 324px;
-    height: 355px;
+    height: 348px;
     background-color: #F2F2F2;
   }
 
@@ -56,12 +59,16 @@
 
 .galery__item-text-wrapper {
   margin-right: auto;
+  @media (min-width: @tablet-width) {
+    margin-left: 21px;
+    margin-top: 7px;
+  }
 }
 
 .galery__item--unnativespace {
   @media (min-width: @tablet-width) {
     width: 648px;
-    height: 485px;
+    height: 480px;
   }
 
   @media (min-width: @desktop-width) {
@@ -137,6 +144,8 @@
   font-size: 14px;
   line-height: 21px;
   color: #000000;
+  margin: 0;
+  margin-top: 9px;
 
   @media (min-width: @desktop-width) {
     color: #FFFFFF
@@ -150,6 +159,9 @@
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+  margin: 0;
+  margin-top: 1px;
+  margin-bottom: 11px;
 
   @media (min-width: @desktop-width) {
     color: #FFFFFF
@@ -157,11 +169,19 @@
 }
 
 .galery__like-button {
+  margin: 0;
+  padding: 0;
+  border: none;
   margin: auto 0;
   width: 23px;
   height: 21px;
-  background-image: url(./img/catalog/like-icon.svg);
-  background-repeat: no-repeat;
+  background-color: #FFFFFF;
+  @media (min-width: @tablet-width) {
+    background-color: #F2F2F2;
+  }
+  @media (min-width: @desktop-width) {
+    background-color: transparent;
+  }
 }
 
 .galery__likes-count {
@@ -170,28 +190,36 @@
   min-width: 34px;
   height: 21px;
   margin: auto 0;
+  margin-left: 10px;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
   color: #000000;
 
+  @media (min-width: @tablet-width) {
+    margin-right: 16px;
+  }
+
   @media (min-width: @desktop-width) {
-    color: #FFFFFF
+    color: #FFFFFF;
   }
 }
 
 .galery__item--video {
+  height: 317px;
   @media (min-width: @tablet-width) {
     margin: 0 auto;
+    margin-top: 54px;
     width: 648px;
-    height: 745px;
+    height: 730px;
     background-color: #FFFFFF;
   }
 
   @media (min-width: @desktop-width) {
     width: 800px;
-    height: 747px;
+    height: 771px;
+    margin-top: 59px;
   }
 }
 
@@ -203,8 +231,10 @@
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+  margin-top: 0;
 
   @media (min-width: @tablet-width) {
+    width: 351px;
     font-size: 30px;
   }
 }
@@ -217,11 +247,18 @@
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+  margin-top: 6px;
+  @media (min-width: @tablet-width) {
+    width: 445px;
+    margin-top: 2px;
+    margin-bottom: 64px;
+  }
 }
 
 .galery__video-link {
   width: 280px;
   height: 177px;
+  margin-top: 24px;
 
   @media (min-width: @tablet-width) {
     width: 648px;
@@ -230,5 +267,14 @@
 
   @media (min-width: @desktop-width) {
     width: 800px;
+  }
+}
+
+.galery__play-link {
+  position: absolute;
+  transform: translate(0, 213px);
+  cursor: pointer;
+  @media (min-width: @tablet-width) {
+    transform: translate(0, 412px);
   }
 }
