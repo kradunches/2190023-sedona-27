@@ -10,7 +10,9 @@
     min-height: 1432px;
   }
 
-  @media (min-width: @desktop-width) {}
+  @media (min-width: @desktop-width) {
+    margin-bottom: 71px;    
+  }
 }
 
 .form__greetings-wrapper {
@@ -132,7 +134,7 @@
     margin: 0;
     padding: 0;
     width: 324px;
-    height: 345px;  //!!!
+    min-height: 345px;  //!!!
     align-items: center;
   }
 
@@ -152,7 +154,7 @@
   @media (min-width: @tablet-width) {
     margin-top: 47px;
     width: 648px;
-    height: 200px;
+    min-height: 200px;
   }
 
   @media (min-width: @desktop-width) {
@@ -161,7 +163,8 @@
     justify-content: center;
     flex-wrap: wrap;
     width: 960px;
-    height: 170px;
+    min-height: 170px;
+    margin-top: 50px;    
   }
 }
 
@@ -180,21 +183,26 @@
   margin-top: 31px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 16px;
+    margin-top: 14px;
   }
 
+  @media (min-width: @desktop-width) {
+    margin-top: 27px;
+  }
 }
 
 .form__item--emotions {
   margin-top: 21px;
 
   @media (min-width: @tablet-width) {
+    margin-top: 24px;
     width: 664px;
   }
 
   @media (min-width: @desktop-width) {
     align-items: center;
     width: 960px;
+    margin-top: 32px;
   }
 }
 
@@ -238,7 +246,7 @@
   margin-bottom: 12px;
 
   &--impression {
-    margin-top: 9px;
+    margin-top: 5px;
     margin-bottom: 16px;
   }
 
@@ -252,9 +260,14 @@
       margin-left: 5px;
     }
 
+    &--places {
+      margin-top: 0;
+      margin-bottom: 14px;
+    }
+
     &--emotions {
       width: 300px;
-      margin-top: 14px;
+      margin-top: 7px;
     }
   }
 
@@ -286,16 +299,6 @@
   }
 
 }
-
-// .form__item--radio .form__title {
-//   margin-top: 13px;
-//   margin-bottom: 14px;
-// }
-
-// .form__item--checkbox .form__title {
-//   margin-top: 6px;
-//   margin-bottom: 15px;
-// }
 
 .form__frame {
   margin-top: 6px;
@@ -382,14 +385,13 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 8px;
     width: 576px;
     justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
     width: 960px;
-    margin-top: 0;
+    margin-top: 7px;
     justify-content: space-around;
   }
 }
@@ -528,8 +530,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 753px;
-    height: 160px;
+    width: 741px;
+    height: 127px;
+    padding: 16px;
   }
 }
 
@@ -587,7 +590,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 10px;
-    margin-right: 93px;
+    margin-top: 41px;
+    margin-right: 96px;
   }
 }
