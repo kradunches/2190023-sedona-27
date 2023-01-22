@@ -26,6 +26,8 @@
   list-style-type: none;
   width: 320px;
   height: 424px;
+  position: relative;
+  // border-bottom: 1px solid #E5E5E5;
 
   @media (min-width: @tablet-width) {
     width: 324px;
@@ -37,6 +39,18 @@
     width: 400px;
     height: 267px;
   }
+}
+
+.galery__item::after {
+  @media (max-width: 767px) {  
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 1px;
+  background-color: #E5E5E5;
+  top: 402px;
+  left: 0;
+  }  
 }
 
 .galery__item-wrapper {

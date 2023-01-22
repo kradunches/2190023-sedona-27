@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   height: 613px;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     height: 723px;
@@ -11,11 +12,12 @@
 }
 
 .welcome-painting--catalog {
-  height: 181px;
+  height: 158px;
 }
 
-.welcome-painting__form {
-  height: 180px;
+.welcome-painting--form {
+  height: 158px;
+  margin-bottom: 22px;
 }
 
 .welcome-painting__text {
@@ -49,16 +51,20 @@
 
 .welcome-painting__sedona-mountains--catalog {
   box-sizing: border-box;
-  height: 158px;
+  min-height: 158px;
   padding: 45px 45px;
+  padding-top: 52px;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
-    height: 301px;
-    padding: 120px 154px;
+    min-height: 290px;
+    padding: 120px; // 154px;
+    padding-top: 95px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 120px 370px;
+    min-height: 290px;    
+    padding-top: 102px;    
   }
 }
 

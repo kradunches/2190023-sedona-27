@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   width: 320px;
-  margin: 0 auto;
+  margin: 22px auto 0 auto;
+
   @media (min-width: @tablet-width) {
     width: @tablet-width;
     margin-top: 149px;
@@ -34,6 +35,7 @@
   color: #333333;
   margin-top: 25px;
   padding: 0 20px;
+  position: relative;
   @media (min-width: @tablet-width) {
     margin-top: 33px;
     padding: 0 170px;
@@ -42,4 +44,16 @@
     padding: 0 400px;
     margin-bottom: 0;
   }
+}
+
+.photos-videos__text::after {
+  @media (max-width: 767px) {  
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 1px;
+  background-color: #E5E5E5;
+  top: 100px;
+  left: 0;
+  }  
 }

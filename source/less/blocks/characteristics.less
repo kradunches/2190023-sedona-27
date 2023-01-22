@@ -144,6 +144,7 @@
     margin-top: 13px;
     padding: 0 35px;
   }
+
   @media (min-width: @desktop-width) {
     width: 234px;
   }
@@ -297,6 +298,7 @@
     padding-left: 18px;
     padding-right: 18px;
   }
+
   @media (min-width: @desktop-width) {
     padding: 0;
     padding-top: 5px;
@@ -309,6 +311,7 @@
     padding-left: 8px;
     padding-right: 10px;
   }
+
   @media (min-width: @tablet-width) {
     padding-top: 8px;
     padding-left: 20px;
@@ -323,6 +326,7 @@
   background-color: #EEEEEE;
   width: 284px;
   min-height: 168px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     min-width: 256px;
@@ -332,6 +336,18 @@
 
   @media (min-width: @desktop-width) {
     min-width: 400px;
+  }
+}
+
+.characteristics__advantages-item-grey:not(:last-child)::after {
+  @media (max-width: 767px) {
+    position: absolute;
+    content: "";
+    width: 284px;
+    height: 1px;
+    background-color: #D6D6D6;
+    top: 166px;
+    left: 18px;
   }
 }
 
@@ -372,6 +388,7 @@
   @media (min-width: @tablet-width) {
     margin-top: 42px;
   }
+
   @media (min-width: @desktop-width) {
     margin-top: 52px;
     padding: 0 150px;
@@ -391,8 +408,9 @@
     // width: 100%;        
     padding: 0, 33px;
   }
+
   @media (min-width: @desktop-width) {
-    width: 100%;    
+    width: 100%;
     padding: 0 130px;
   }
 }

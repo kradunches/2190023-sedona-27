@@ -40,13 +40,11 @@
 
     <main class="main-container">
       <h1 class="visually-hidden">Форма заполнения отзыва</h1>
-      <section class="welcome-painting welcome-painting__form">
+      <section class="welcome-painting welcome-painting--form">
         <h2 class="visually-hidden">Визитная карточка Седоны</h2>
         <div class="welcome-painting__sedona-mountains welcome-painting__sedona-mountains--catalog">
           <img class="welcome-painting__sedona-text" src="./img/text-sedona.svg" width="230" height="40"
             alt="Добро пожаловать в Седону.">
-          <!-- <img class="welcome-painting__hero-block-triangle" src="./img/intro-triangle.svg" width="320" height="57" -->
-          alt="">
         </div>
       </section>
       <section class="form">
@@ -103,53 +101,60 @@
             <li class="form__item form__item--radio-checkbox form__item--radio">
               <h2 class="form__title form__title--impression">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</h2>
               <div class="form__radio-section">
-                <div class="form__radio-checkbox-wrapper">
+
+                <label class="form__radio-checkbox-wrapper">
                   <input class="visually-hidden form__impressions-radio" id="impressions-choice1"
                     name="impressions-choice" type="radio" value="very-positive" checked>
-                  <div class="form__control-mark form__control-mark--radio"></div>
-                  <label class="form__radio-checkbox-text" for="impressions-choice1">Скорее положительное</label>
-                </div>
-                <div class="form__radio-checkbox-wrapper">
+                  <span class="form__control-mark form__control-mark--radio"></span>
+                  <span class="form__radio-checkbox-text">Скорее положительное</span>
+                </label>
+
+                <label class="form__radio-checkbox-wrapper">
                   <input class="visually-hidden form__impressions-radio" id="impressions-choice2"
                     name="impressions-choice" type="radio" value="very-negative">
-                  <div class="form__control-mark form__control-mark--radio"></div>
-                  <label class="form__radio-checkbox-text" for="impressions-choice2">Скорее отрицательное</label>
-                </div>
-                <div class="form__radio-checkbox-wrapper">
+                  <span class="form__control-mark form__control-mark--radio"></span>
+                  <span class="form__radio-checkbox-text">Скорее отрицательное</span>
+                </label>
+
+                <label class="form__radio-checkbox-wrapper">
                   <input class="visually-hidden form__impressions-radio" id="impressions-choice3"
                     name="impressions-choice" type="radio" value="idk">
-                  <div class="form__control-mark form__control-mark--radio"></div>
-                  <label class="form__radio-checkbox-text" for="impressions-choice3">Затрудняюсь ответить</label>
-                </div>
+                  <span class="form__control-mark form__control-mark--radio"></span>
+                  <span class="form__radio-checkbox-text">Затрудняюсь ответить</span>
+                </label>
               </div>
             </li>
             <li class="form__item form__item--radio-checkbox form__item--checkbox">
               <h2 class="form__title form__title--places">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</h2>
               <div class="form__checkbox-section">
-                <div class="form__radio-checkbox-wrapper form__radio-checkbox-wrapper--cb">
+
+                <label class="form__radio-checkbox-wrapper form__radio-checkbox-wrapper--cb">
                   <input class="visually-hidden form__showplaces-checkbox" type="checkbox" id="devils-bridge"
                     name="devils-bridge" checked>
-                  <div class="form__control-mark"></div>
-                  <label class="form__radio-checkbox-text" for="devils-bridge">Мост Дьявола</label>
-                </div>
-                <div class="form__radio-checkbox-wrapper form__radio-checkbox-wrapper--cb">
+                  <span class="form__control-mark"></span>
+                  <span class="form__radio-checkbox-text">Мост Дьявола</span>
+                </label>
+
+                <label class="form__radio-checkbox-wrapper form__radio-checkbox-wrapper--cb">
                   <input class="visually-hidden form__showplaces-checkbox" type="checkbox" id="bell-mountain"
                     name="bell-mountain" checked>
-                  <div class="form__control-mark"></div>
-                  <label class="form__radio-checkbox-text" for="bell-mountain">Гора-Колокол</label>
-                </div>
-                <div class="form__radio-checkbox-wrapper form__radio-checkbox-wrapper--cb">
-                  <input class="visually-hidden form__showplaces-checkbox" type="checkbox" id="side-park"
-                    name="side-park" checked>
-                  <div class="form__control-mark"></div>
-                  <label class="form__radio-checkbox-text" for="side-park">Слайд-парк</label>
-                </div>
-                <div class="form__radio-checkbox-wrapper form__radio-checkbox-wrapper--cb">
+                  <span class="form__control-mark"></span>
+                  <span class="form__radio-checkbox-text">Гора-Колокол</span>
+                </label>
+
+                <label class="form__radio-checkbox-wrapper form__radio-checkbox-wrapper--cb">
+                  <input class="visually-hidden form__showplaces-checkbox" type="checkbox" id="slide-park"
+                    name="slide-park" checked>
+                  <span class="form__control-mark"></span>
+                  <span class="form__radio-checkbox-text">Слайд-парк</span>
+                </label>
+
+                <label class="form__radio-checkbox-wrapper form__radio-checkbox-wrapper--cb">
                   <input class="visually-hidden form__showplaces-checkbox" type="checkbox" id="red-mountains"
                     name="red-mountains">
-                  <div class="form__control-mark"></div>
-                  <label class="form__radio-checkbox-text" for="red-mountains">Красные скалы</label>
-                </div>
+                  <span class="form__control-mark"></span>
+                  <span class="form__radio-checkbox-text">Красные скалы</span>
+                </label>
               </div>
             </li>
             <li class="form__item form__item--emotions">
@@ -231,7 +236,8 @@
     <div class="sended__modal-container visually-hidden">
       <div class="sended__main">
         <h2 class="sended__header">ВАШ ОТЗЫВ ОТПРАВЛЕН!</h2>
-        <span class="sended__text">СПАСИБО ЗА ВАШЕ УЧАСТИЕ, ВАШ ОТЗЫВ УЖЕ ПОСТУПИЛ К НАМ. В БЛИЖАЙШЕЕ ВРЕМЯ МЫ ОПУБЛИКУЕМ ЕГО НА САЙТЕ.</span>
+        <span class="sended__text">СПАСИБО ЗА ВАШЕ УЧАСТИЕ, ВАШ ОТЗЫВ УЖЕ ПОСТУПИЛ К НАМ. В БЛИЖАЙШЕЕ ВРЕМЯ МЫ
+          ОПУБЛИКУЕМ ЕГО НА САЙТЕ.</span>
         <div class="sended__button-wrapper">
           <button class="sended__close-button">ЗАКРЫТЬ ОКНО</button>
         </div>
