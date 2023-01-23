@@ -40,6 +40,10 @@
     height: 518px;
     padding: 78px 153px 90px 153px;
     // background-image: url(../img/back-tablet.png);
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+      background-size: @tablet-width auto;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -63,8 +67,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 290px;    
-    padding-top: 102px;    
+    min-height: 290px;
+    padding-top: 102px;
   }
 }
 

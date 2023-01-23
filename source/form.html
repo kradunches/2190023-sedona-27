@@ -43,8 +43,12 @@
       <section class="welcome-painting welcome-painting--form">
         <h2 class="visually-hidden">Визитная карточка Седоны</h2>
         <div class="welcome-painting__sedona-mountains welcome-painting__sedona-mountains--catalog">
-          <img class="welcome-painting__sedona-text" src="./img/text-sedona.svg" width="230" height="40"
-            alt="Добро пожаловать в Седону.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/form/hero-block-text-desktop.svg">
+            <source media="(min-width: 768px)" srcset="./img/form/hero-block-text-tablet.svg">
+            <img class="welcome-painting__sedona-text" src="./img/text-sedona.svg" width="230" height="40"
+              alt="Добро пожаловать в Седону.">
+          </picture>
         </div>
       </section>
       <section class="form">
