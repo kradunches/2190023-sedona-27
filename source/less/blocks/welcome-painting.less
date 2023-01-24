@@ -30,7 +30,11 @@
   box-sizing: border-box;
   width: 320px;
   height: 389px;
-  background-image: url(../img/intro-triangle.svg), url(../img/back-desktop.jpg);
+  // background-image: url(../img/intro-triangle.svg), url(../img/back-desktop.jpg);
+  background-image: url(../img/intro-triangle.svg), url(../img/index/back.jpg);
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/intro-triangle.svg), url(../img/index/back@2x.jpg);
+  }
   background-repeat: no-repeat;
   background-position: center bottom;
   padding: 90px 19px 85px 19px;
@@ -39,9 +43,9 @@
     width: @tablet-width;
     height: 518px;
     padding: 78px 153px 90px 153px;
-    // background-image: url(../img/back-tablet.png);
+    background-image: url(../img/index/back-tablet.jpg);
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/back-tablet@2x.jpg");
+      background-image: url("../img/index/back-tablet@2x.jpg");
       background-size: @tablet-width auto;
     }
   }
@@ -49,7 +53,11 @@
   @media (min-width: @desktop-width) {
     width: @desktop-width;
     padding: 78px 370px 90px 370px;
-    // background-image: url(../img/back-desktop.png);
+    background-image: url(../img/index/back-desktop.jpg);
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/back-desktop@2x.jpg");
+      background-size: @desktop-width auto;
+    }
   }
 }
 
