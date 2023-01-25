@@ -76,12 +76,6 @@
   }
 }
 
-@media (min-width: @tablet-width) {
-  .characteristics__img--devilbridge {
-    order: -1;
-  }
-}
-
 .characteristics__title-bluestyle {
   display: block;
   margin: 0;
@@ -127,7 +121,6 @@
   line-height: 21px;
   text-align: center;
   color: #FFFFFF;
-  // margin-top: 15px;
 
   @media (min-width: @tablet-width) {
     line-height: 21px;
@@ -169,7 +162,7 @@
   flex-direction: column;
   width: 284px;
   min-height: 393px;
-  padding: 23px 18px 1px 18px;
+  padding: 18px 18px 1px 18px;
 
   @media (min-width: @tablet-width) {
     width: @tablet-width;
@@ -404,8 +397,7 @@
 
 .characteristics__title-whitestyle--tourists {
   @media (min-width: @tablet-width) {
-    width: 150px;
-    // width: 100%;        
+    width: 150px;      
     padding: 0, 33px;
   }
 
@@ -427,9 +419,22 @@
   padding: 0 37px;
   margin-top: 13px;
 
-  // margin-bottom: 1px;
   @media (min-width: @tablet-width) {
     margin-top: 14px;
     margin-bottom: 9px;
+  }
+}
+
+.characteristics__img--city {
+  @media (min-width: @tablet-width) {
+    height: 256px;
+  }
+}
+
+.characteristics__picture--devilbridge {
+  height: 260px;
+  @media (min-width: @tablet-width) {
+    order: -1;
+    height: 256px;
   }
 }
