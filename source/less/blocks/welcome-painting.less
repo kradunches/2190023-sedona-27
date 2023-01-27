@@ -30,10 +30,12 @@
   box-sizing: border-box;
   width: 320px;
   height: 389px;
-  background-image: url(../img/index/back.jpg);
+  background: #ffffff url("../img/index/back.jpg");
+
   @media (min-resolution: 2dppx) {
-    background-image: url(../img/index/back@2x.jpg);
+    background-image: url("../img/index/back@2x.jpg");
   }
+
   background-repeat: no-repeat;
   background-position: center bottom;
   padding: 90px 19px 85px 19px;
@@ -42,7 +44,8 @@
     width: @tablet-width;
     height: 518px;
     padding: 78px 153px 90px 153px;
-    background-image: url(../img/index/back-tablet.jpg);
+    background: #ffffff url("../img/index/back-tablet.jpg");
+
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index/back-tablet@2x.jpg");
       background-size: @tablet-width auto;
@@ -52,7 +55,8 @@
   @media (min-width: @desktop-width) {
     width: @desktop-width;
     padding: 78px 370px 90px 370px;
-    background-image: url(../img/index/back-desktop.jpg);
+    background: #ffffff url("../img/index/back-desktop.jpg");
+
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index/back-desktop@2x.jpg");
       background-size: @desktop-width auto;
@@ -65,18 +69,20 @@
   position: absolute;
   width: 320px;
   height: 57px;
-  bottom: 0 ;
+  bottom: 0;
   left: 0;
-  background-image: url(../img/intro-triangle.svg);
+  background-image: url("../img/intro-triangle.svg");
   background-repeat: no-repeat;
-  background-position: center bottom ;
+  background-position: center bottom;
   z-index: 10;
+
   @media (min-width: @tablet-width) {
     width: @tablet-width;
   }
+
   @media (min-width: @desktop-width) {
     width: @desktop-width;
-  }  
+  }
 }
 
 .welcome-painting__sedona-mountains--catalog {
@@ -135,7 +141,7 @@
   line-height: 26px;
   color: #000000;
   text-align: center;
-  margin: 32px 18px 0px 18px;
+  margin: 32px 18px 0 18px;
   overflow-wrap: break-word;
   width: 272px;
 
@@ -159,8 +165,6 @@
   line-height: 21px;
   color: #333333;
   text-align: center;
-  margin-right: 18px;
-  margin-left: 18px;
   margin: 35px 18px 38px 18px;
   width: 284px;
 

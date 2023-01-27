@@ -7,12 +7,14 @@
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
+  <link rel="preload" href="./fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="./fonts/ptsansbold.woff2" as="font">
 </head>
 
 <body class="page__body">
   <div class="page__container">
     <header class="main-header">
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__menu site-list">
           <li class="site-list__item">
@@ -32,7 +34,7 @@
             </a>
           </li>
         </ul>
-        <a class="main-nav__logo" href="./index.html">
+        <a class="main-nav__logo" href="#">
           <img class="main-nav__sedona-logo" src="./img/logo.png" width="185" height="96" srcset="./img/logo@2x.png 2x"
             alt="Логотип Седона">
         </a>
@@ -65,7 +67,7 @@
                 <p class="characteristics__text-bluestyle">— №1 —</p>
                 <p class="characteristics__text-bluestyle">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
               </div>
-              <picture class="characteristics__img--city">
+              <picture class="characteristics__img-city">
                 <source media="(min-width: 1200px)"
                   srcset="./img/index/photo-city-desktop.jpg 1x, ./img/index/photo-city-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
@@ -110,12 +112,12 @@
               <p class="characteristics__text-bluestyle characteristics__text-bluestyle--devilbridge">ДА, ПО НЕМУ МОЖНО
                 ПРОЙТИ! ЕСЛИ ВЫ ОСМЕЛИТЕСЬ, КОНЕЧНО</p>
             </div>
-            <picture class="characteristics__picture--devilbridge">
+            <picture class="characteristics__picture-devilbridge">
               <source media="(min-width: 1200px)"
                 srcset="./img/index/photo-bridge-desktop.jpg 1x, ./img/index/photo-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
                 srcset="./img/index/photo-bridge-tablet.jpg 1x, ./img/index/photo-bridge-tablet@2x.jpg 2x">
-              <img class="characteristics__img  characteristics__img--devilbridge" src="./img/index/photo-bridge.jpg"
+              <img class="characteristics__img  characteristics__img-devilbridge" src="./img/index/photo-bridge.jpg"
                 width="800" height="256" srcset="./img/index/photo-bridge@2x.jpg 2x" alt="Мост дьявола">
             </picture>
           </li>
